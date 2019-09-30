@@ -29,7 +29,7 @@ jobs:
           pngquant --force --ext .png --speed 1 public/calendar.png
           advpng -z -4 -i 10 public/calendar.png
       - name: cname
-        run: echo github.teruaki-tsubokura.com > public/CNAME
+        run: echo calendar.teruaki-tsubokura.com > public/CNAME
       - name: gh-pages
         uses: peaceiris/actions-gh-pages@v2.3.1
         env:
