@@ -3,7 +3,7 @@ name: calendar
 on:
   schedule:
     # - cron: 0 0,12 * * * # JST
-    - cron: 30 * * * * # UTC
+    - cron: 0,10,20,30,40,50 * * * * # UTC
   push:
     branches:
       - master
