@@ -21,6 +21,8 @@ jobs:
         run: mkdir public
       - name: fetch calendar image
         run: curl -L -o public/calendar.png "http://drive.google.com/uc?export=view&id=1P2upt9HdnDLLMrEff8GJPDp3ig-IDXc6"
+      - name: fetch quest-calendar image
+        run: curl -L -o public/quest-calendar.png "http://drive.google.com/uc?export=view&id=1Ra0LRkvjbzdzCe_nGtnzzGlKOobVncUr"
       - name: check format
         run: |
           [ `file --brief --mime-type public/calendar.png` = "image/png" ]
